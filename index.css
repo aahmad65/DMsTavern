@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+  font-family: "Macondo", cursive, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing:border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url("tavern-blur.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #744425;
+  color: #f1ca96;
+}
+
+main {
+  padding-bottom: 20px;
+  min-height: 100vh;
+}
+
+nav li, nav a {
+  font-weight: 500;
+  font-size: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+  background-color: #352215;
+}
+
+.active {
+  font-weight: bold;
+}
+
+nav li a {
+  transition: all 0.3s ease 0s;
+  padding: 0px;
+}
+
+nav li a:hover {
+  color: #ffa24b;
+}
+
+.navbar-toggler {
+  border: 1px solid #f1ca96;
+}
+.accountBtn {
+  padding: 5px 30px;
+  color: inherit;
+  border: 2px solid #361c0d;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.accountBtn:hover{
+  background-color: #c97d4b;
+  color: #1a0c04;
+}
+
+/* Slideshow container */
+#myCarousel {
+  width: 80%;
+  height: 40%;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-block;
+  background-color: #744425;
+}
+
+.dndHelp {
+  border-top: 2px solid #361c0d;
+  border-bottom: 2px solid #361c0d;
+  padding: 30px 10%;
+  text-align: center;
+  background-color: #d46d0b;
+  color: #361c0d;
+}
+
+.dndHelp p {
+  font-size: 20px;
+}
+
+.dndHelp a{
+  color: #361c0d;
+}
+
+.dndHelp a:hover{
+  color: #f1ca96;
+}
+
+.cardHolder {
+  padding-top: 20px;
+}
+
+.cardPanels {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  padding: 10px;
+  font-size: 20px; 
+  text-align: justify;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  margin: 0 1% 0 1%;
+  padding: 0px 25px;
+  border: 1px solid black;
+  background-color: #5c361c;
+  color: #f1ca96;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardHeader {
+  padding: 0 50px 10px 50px;
+  display: inline;
+}
+
+.cardImg {
+  height: 128px;
+  width: 128px;
+  border-bottom: 1px solid black;
+}
+
+#cardArcher {
+  height: 128px;
+  width: 128px;
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+}
+
+.cardBtn {
+  margin: 10px;
+  border: 1px solid black;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardBtn:hover {
+  background-color: #352215;
+  color: inherit;
+}
+
+
+footer {
+  position: relative;
+  height: auto;
+  clear: both;
+  width: 100%;
+  border-top: 2px solid #1a0c04;
+  background-color: #352215;
+  justify-content: space-evenly;
+}
+
+.footerInfo {
+  display: flex;
+  align-items: center;
+}
+
+.row a{
+  color: #f1ca96;
+  font-size: 24px;
+}
+
+#logo {
+  padding-top: 0px;
+}
+
+#pageHeader {
+  border-top: 1px solid black;
+  padding-top: 20px;
+}

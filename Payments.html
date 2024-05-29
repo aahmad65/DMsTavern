@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeon Masters' Tavern</title>
+  <link rel="icon" href="images/DMlogo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="payments.css">
+  </head>
+  <body> 
+    <main>
+      <nav class="navbar border-body navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM Tavern's logo" width="64" height="64"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Play.html">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Friends.html">Friends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Payments.html">Payments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Help.html">Help</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn accountBtn" onclick="return alert('Cannot edit account of testuser (feature not implemented)')" type="submit">
+            testuser
+          </button>
+        </div>
+      </nav>
+      <section>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container" id="pageHeader">
+            <span class="h1">Payments</span>
+          </div>
+        </nav>
+      </section>
+  <section class="container-fluid page">
+    <a class="btn d-md-block mx-auto" id="contractBtn" data-bs-toggle="modal" role="button" data-bs-target="#contract">New Contract</a>
+    <div class="modal fade" id="contract" tabindex="-1" aria-labelledby="contract" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5">New Contract</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h4>Who are you making a contract with?</h4>
+            <div class="dropdown">
+              <select class="form-select" aria-label="friendSelect">
+                <option selected>Friends List</option>
+                <option value="CelestialAura">CelestialAura</option>
+                <option value="StarborneMystic">StarborneMystic</option>
+                <option value="HoofedGuardian">HoofedGuardian</option>
+                <option value="DeepstoneWarden">DeepstoneWarden</option>
+                <option value="StoneheartSoul">StoneheartSoul</option>
+                <option value="WhisperingWings">WhisperingWings</option>
+                <option value="GroveProtector">GroveProtector</option>
+                <option value="FlameforgedSpirit">FlameforgedSpirit</option>
+                <option value="MountainTitan">MountainTitan</option>
+                <option value="WarboundStrategist">WarboundStrategist</option>
+                <option value="SylvanReveler">SylvanReveler</option>
+                <option value="TidalVoyager">TidalVoyager</option>
+              </select>
+            </div>
+            <h4>What role are you in the transaction?</h4>
+            <div class="dropdown">
+              <select class="form-select" aria-label="friendSelect">
+                <option selected>Role</option>
+                <option value="CelestialAura">DM</option>
+                <option value="StarborneMystic">Player</option>
+              </select>
+            </div>
+            <h4>What price was settled on?</h4>
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+            <h6 class="disclaimer"><strong>Disclaimer:</strong></h6>
+            <strong class="disclaimer">Do not forget to keep track of the conversations building up to this contract and going forward from this contract.</strong>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <form action="Payments.html" method="post">
+              <button type="submit" class="btn btn-primary" id="sendBtn">Send Contract</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>Alternative Payment Options</h3>
+    <p>If you and your partner are not interested in creating a contract, you can alternatively contact them and see how they would prefer to be paid.
+      We recommend PayPal, Venmo, or Zelle. However, using payment methods that we do not have control over is not recommended. Our contracts allow
+      us to keep track of both sides and ensure they fulfill them. If you do go outside of our contracts, please keep receipts so we may try to help you anyways.
+      There is no guarantee of refunds outside of our contracts. Please use caution when it comes to financial transactions on the internet.
+    </p>
+    <section class="alternativeOptions">
+      <h3>These buttons will take you to third-party websites (PayPal, Venmo, Zelle)</h3>
+      <a class="btn d-md-block mx-auto" href="https://www.paypal.com">PayPal</a>
+      <a class="btn d-md-block mx-auto" href="https://venmo.com">Venmo</a>
+      <a class="btn d-md-block mx-auto" href="https://www.zellepay.com">Zelle</a>
+    </section>
+    <img class="mx-auto d-block bigLogo" src="images/DMlogo.png" alt="DM's Tavern logo">
+  </section>
+</main>
+<footer class="sticky-bottom text-center">
+  <div class="container p-4">
+    <section class="footer">
+      <div class="row footerInfo">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="logo">
+          <a href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM's Tavern logo" width="100" height="100"></a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="Help.html">Support Portal</a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="Help.html#contactFormBtn">Email Us</a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="https://github.com/aahmad65">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

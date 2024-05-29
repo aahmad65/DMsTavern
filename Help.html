@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeon Masters' Tavern</title>
+  <link rel="icon" href="images/DMlogo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="help.css">
+  </head>
+  <body> 
+    <main>
+      <nav class="navbar border-body navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM Tavern's logo" width="64" height="64"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Play.html">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Friends.html">Friends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Payments.html">Payments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Help.html">Help</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn accountBtn" onclick="return alert('Cannot edit account of testuser (feature not implemented)')" type="submit">
+            testuser
+          </button>
+        </div>
+      </nav>
+
+  <section>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container" id="pageHeader">
+        <span class="h1">Support Portal</span>
+      </div>
+    </nav>
+  </section>
+  <div class="container-fluid">
+    <section class="dndHelp">
+      <span class="helpTitle">
+        What is Dungeons and Dragons (D&D/DND)?
+      </span>
+      <p>
+        In Dungeons & Dragons, the players form an adventuring party who explore fantasy worlds together as they embark on 
+        epic quests and level up in experience. The Dungeon Master (also known as the DM) is the game's referee and storyteller.
+        There's no winning or losing in D&D—at least, not in the conventional way. At its heart, D&D is a game that focuses on storytelling. 
+        The dice just help you along. Everything is your decision, from what you look like, to how you act, to what happens next. 
+        The collective creativity in your D&D game builds stories that you'll tell again and again—ranging from the stuff of legend 
+        to absurd incidents that'll make you laugh years later.
+        Have fun and remember—never split the party!
+      </p>
+      <a href="https://dnd.wizards.com/start-playing-dnd">Find out more here!</a>
+    </section>
+  </div>
+
+  <section class="container-fluid faq">
+    <p class="faqTitle">
+      Frequently Asked Questions
+    </p>
+    <p class="Q">How are payments kept secure?</p>
+    <p class="A">Payments are kept secure by making contracts. There is an option to simply go through PayPal if you would
+        like to skip the contract. However, we encourage the use of our contracts to ensure your financial safety as well as 
+      avoid scams. We can also help you retrieve your money more easily if you use our contacts. <strong>We suggest
+        you keep track of the conversations between you and your buyer or seller. This will allow us to figure out who is in the right.
+      </strong></p>
+    <p class="Q" id="contractHelp">What are contracts?</p>
+    <p class="A">Contracts are the way that we here at the Dungeon Master's Tavern keep your payments between DMs and Players secure.
+      It is as simple as going to the <a href="Payments.html">payments</a> page and clicking "Create Contract". This will allow you to
+      add a friend to a contract and you two can decide on the financial transactions that will happen between you two. This will allow us
+      to make sure both sides keep this contract and help you out if one side doesn't hold up.
+    </p>
+    <p class="Q">What should I do if I no longer want to be apart of a contract?</p>
+    <p class="A">If you no longer want to be part of a contract, you can send us a message through <a href="#contactFormBtn">contact form</a> (below!). We will look at the contract
+      and talk to both sides to make sure no one is half committing. Once one side has fulfilled their side of the contract, the other must follow through,
+      assuming it was to their satisfaction. This is why we say how important it is to <strong>keep track of your conversations!</strong>
+    </p>
+  </section>
+
+  <a class="btn d-md-block mx-auto" id="contactFormBtn" data-bs-toggle="collapse" href="#contactForm" role="button" aria-expanded="false" aria-controls="contactForm">
+    Contact Form
+  </a>
+
+  <div class="collapse container-fluid" id="contactForm">
+    <div class="card card-body">
+      <form>
+        <div class="row mb-3">
+          <label for="inputEmail" class="col-md-12 col-form-label">Email</label>
+          <div class="col-md-10">
+            <input type="email" class="form-control" id="inputEmail">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputUsername" class="col-md-12 col-form-label">Username</label>
+          <div class="col-md-10">
+            <input type="text" class="form-control" id="inputUsername">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="message" class="col-md-12 col-form-label"><b>Message:</b></label>
+          <div class="col-md-10">
+            <textarea name="message" placeholder="Enter Message" id="message" required></textarea>
+          </div>
+        </div>
+        <button class="submitContactForm btn d-md-block" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+</main>
+<footer class="sticky-bottom text-center">
+  <div class="container p-4">
+    <section class="footer">
+      <div class="row footerInfo">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="logo">
+          <a href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM's Tavern logo" width="100" height="100"></a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="Help.html">Support Portal</a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="Help.html#contactFormBtn">Email Us</a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="https://github.com/aahmad65">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

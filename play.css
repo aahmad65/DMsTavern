@@ -1,0 +1,51 @@
+.profile {
+  padding: 20px 10px 10px;
+  margin: 20px 20px;
+  border: 1px solid black;
+  background-color: #5c361c;
+}
+
+.profile .btn {
+  color: #f1ca96;
+  text-decoration: underline;
+  padding-bottom: 0px;
+}
+
+.profile .btn:hover {
+  color: #fff1df;
+}
+
+.modal-content {
+  background-color: #352215;
+}
+
+.modal-content h5 {
+  padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .profile .btn, .profile h5 {
+    font-size: 0.75rem;
+  }
+  .profile p, .profile h6 {
+    font-size: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .profile .btn, .profile h5 {
+    font-size: 1.25rem;
+  }
+  .profile p, .profile h6 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .profile .btn, .profile h5 {
+    font-size: 1.5rem;
+  }
+  .profile p, .profile h6 {
+    font-size: 1rem;
+  }
+}

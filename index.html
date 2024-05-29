@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeon Masters' Tavern</title>
+  <link rel="icon" href="images/DMlogo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  </head>
+  <body> 
+    <main>
+      <nav class="navbar border-body navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM Tavern's logo" width="64" height="64"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Play.html">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Friends.html">Friends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Payments.html">Payments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Help.html">Help</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn accountBtn" onclick="return alert('Cannot edit account of testuser (feature not implemented)')" type="submit">
+            testuser
+          </button>
+        </div>
+      </nav>
+      <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/dnd1.jpg" class="d-block w-100" alt="Four people smiling playing a tabletop game">
+          </div>
+          <div class="carousel-item">
+            <img src="images/dnd2.png" class="d-block w-100" alt="Figures next to a wall with three people behind it">
+          </div>
+          <div class="carousel-item">
+            <img src="images/dnd3.jpg" class="d-block w-100" alt="Four people smiling at the camera playing a tabletop game in a room">
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid dndHelp">
+        <h3>What is Dungeons and Dragons (D&D/DND)?</h3>
+        <p>In Dungeons & Dragons, the players form an adventuring party who explore fantasy worlds together as they embark on 
+          epic quests and level up in experience. The Dungeon Master (also known as the DM) is the game's referee and storyteller.
+          There's no winning or losing in D&D—at least, not in the conventional way. At its heart, D&D is a game that focuses on storytelling. 
+          The dice just help you along. Everything is your decision, from what you look like, to how you act, to what happens next. 
+          The collective creativity in your D&D game builds stories that you'll tell again and again—ranging from the stuff of legend 
+          to absurd incidents that'll make you laugh years later.
+          Have fun and remember—never split the party!</p>
+        <a href="https://dnd.wizards.com/start-playing-dnd">Find out more here!</a>
+      </div>
+      <div class="container text-center cardHolder">
+        <div class="row align-items-start">
+          <div class="col card h-100">
+            <img id="cardArcher" src="images/archer.png" alt="Archer shooting">
+            <h3 class="cardHeader">About Us</h3>
+            <p>
+              The point of the Dungeon Master's (DM's) Tavern is to allow players and DMs alike to find others for their games. 
+              Players might have a full group but need a DM, or a DM needs players for a world. The biggest goal is to allow DMs
+              to get paid for the time they put in, which will happen through us!
+            </p>
+            <a class="cardBtn" href="aboutUs.html">About Us</a>
+          </div>
+          <div class="col card h-100">
+            <img class="cardImg" src="images/knight.png" alt="Knight standing proud">
+            <h3 class="cardHeader">How It Works</h3>
+            <p>
+              Click the fancy play button below and begin perusing DMs and players. Feel free to use the filters provided to find
+              one that you really like! Once you've found one, or a few, shoot them a message through their socials! If you are looking
+              for a DM, you should expect to pay a price you have BOTH agreed upon.
+            </p>
+            <a class="cardBtn" href="Help.html#contractHelp">What are Contracts?</a>
+          </div>
+          <div class="col card h-100">
+            <img class="cardImg" src="images/bard.png" alt="Devil bard rocking out">
+            <h3 class="cardHeader">One Last Thing!</h3>
+            <p>
+              The last thing to know is the review system. Once players and DMs have interacted, they will be
+              able to review each other once the transaction is complete. The hope is to allow DMs and players to be truthful about how 
+              eachother play their games. Now let's get to some Dungeons & Dragons!
+            </p>
+            <a class="cardBtn" href="Play.html">Play</a>
+          </div>
+        </div>
+      </div>
+    </main>
+      <footer class="sticky-bottom text-center">
+        <div class="container p-4">
+          <section class="footer">
+            <div class="row footerInfo">
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="logo">
+                <a href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM's Tavern logo" width="100" height="100"></a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="Help.html">Support Portal</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="Help.html#contactFormBtn">Email Us</a>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <a href="https://github.com/aahmad65">GitHub</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

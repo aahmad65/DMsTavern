@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeon Masters' Tavern</title>
+  <link rel="icon" href="images/DMlogo.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="play.css">
+  </head>
+  <body> 
+    <main>
+      <nav class="navbar border-body navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM Tavern's logo" width="64" height="64"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Play.html">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Friends.html">Friends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Payments.html">Payments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Help.html">Help</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn accountBtn" onclick="return alert('Cannot edit account of testuser (feature not implemented)')" type="submit">
+            testuser
+          </button>
+        </div>
+      </nav>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container" id="pageHeader">
+          <span class="h1">Friends</span>
+        </div>
+      </nav>
+      <section>
+        <div class="container text-center">
+          <div class="row g-4 align-items-start justify-content-center">
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/aasimar.jpg" alt="A godly human with red eyes">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#CelestialAura">
+                CelestialAura
+              </button>
+              <h5>DM</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/astralElf.jpg" alt="An astral-born elf">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#StarborneMystic">
+                StarborneMystic
+              </button>
+              <h5>DM</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/centaur.jpg" alt="An elven centaur readying a bow">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#HoofedGuardian">
+                HoofedGuardian
+              </button>
+              <h5>DM</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/duergar.jpg" alt="A dark dwarf praying">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#DeepstoneWarden">
+                DeepstoneWarden
+              </button>
+              <h5>DM</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/earthGenasi.jpg" alt="An earthen humanoid with a warhammer">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#StoneheartSoul">
+                StoneheartSoul
+              </button>
+              <h5>Player</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/fairy.jpg" alt="A mischevious fairy">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#WhisperingWings">
+                WhisperingWings
+              </button>
+              <h5>Player</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/firbolg.jpg" alt="A tall forest protector">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#GroveProtector">
+                GroveProtector
+              </button>
+              <h5>Player</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/fireGenasi.jpg" alt="A fire-born genasi">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#FlameforgedSpirit">
+                FlameforgedSpirit
+              </button>
+              <h5>Player</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/goliath.jpg" alt="A mountain-born strongman">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#MountainTitan">
+                MountainTitan
+              </button>
+              <h5>Player</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/hobGoblin.jpg" alt="A red goblin humanoid">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#WarboundStrategist">
+                WarboundStrategist
+              </button>
+              <h5>Player</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/satyr.jpg" alt="A smiling satyr">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#SylvanReveler">
+                SylvanReveler
+              </button>
+              <h5>Player</h5>
+            </div>
+            <div class="col-3 profile">
+              <img class="img-fluid" src="images/seaElf.jpg" alt="A smirking sea elf">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#TidalVoyager">
+                TidalVoyager
+              </button>
+              <h5>Player</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="modals">
+        <div class="modal fade" id="CelestialAura" tabindex="-1" aria-labelledby="CelestialAura" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">CelestialAura</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/aasimar.jpg" alt="A godly human with red eyes">
+                <h5>DM</h5>
+                <h6>About Me:</h6>
+                <p>As CelestialAura, I guide adventurers through realms where the light of the heavens meets the darkness
+                   of the abyss. My campaigns are infused with divine intrigue and celestial quests, ensuring every player
+                    experiences the radiant glory and perilous trials of the Aasimar heritage.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="StarborneMystic" tabindex="-1" aria-labelledby="StarborneMystic" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">StarborneMystic</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/astralElf.jpg" alt="An astral-born elf">
+                <h5>DM</h5>
+                <h6>About Me:</h6>
+                <p>Welcome to the astral domains! As StarborneMystic, I weave tales of cosmic wonder
+                   and ethereal adventures. Expect to traverse star-lit pathways and encounter celestial
+                    beings as we uncover the secrets of the Astral Elves.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="HoofedGuardian" tabindex="-1" aria-labelledby="HoofedGuardian" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">HoofedGuardian</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/centaur.jpg" alt="An elven centaur readying a bow">
+                <h5>DM</h5>
+                <h6>About Me:</h6>
+                <p>HoofedGuardian at your service, leading you through untamed wilderness
+                   and ancient forests. My campaigns focus on the harmony between nature and
+                    adventure, drawing from the rich, mythic traditions of the Centaurs.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="DeepstoneWarden" tabindex="-1" aria-labelledby="DeepstoneWarden" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">DeepstoneWarden</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/duergar.jpg" alt="A dark dwarf praying">
+                <h5>DM</h5>
+                <h6>About Me:</h6>
+                <p>Journey deep into the earth with DeepstoneWarden as your guide.
+                   I specialize in dark, gritty campaigns set in the depths of the Underdark,
+                  where Duergar resilience and cunning will be your greatest assets.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="StoneheartSoul" tabindex="-1" aria-labelledby="StoneheartSoul" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">StoneheartSoul</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/earthGenasi.jpg" alt="An earthen humanoid with a warhammer">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>I am StoneheartSoul, an Earth Genasi with an unyielding spirit. My bond with the
+                   earth grants me unparalleled strength and resilience, making me a reliable companion in any quest.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="WhisperingWings" tabindex="-1" aria-labelledby="WhisperingWings" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">WhisperingWings</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/fairy.jpg" alt="A mischevious fairy">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>Greetings! I'm WhisperingWings, a fairy with a penchant for magic and mischief.
+                   My delicate wings carry me through adventures where wit and charm are just as
+                    important as spells and swords.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="GroveProtector" tabindex="-1" aria-labelledby="GroveProtector" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">GroveProtector</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/firbolg.jpg" alt="A tall forest protector">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>As GroveProtector, I am a Firbolg dedicated to nature's preservation.
+                   My connection to the natural world provides wisdom and strength,
+                    helping to guide my friends through the most verdant of challenges.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="FlameforgedSpirit" tabindex="-1" aria-labelledby="FlameforgedSpirit" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">FlameforgedSpirit</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/fireGenasi.jpg" alt="A fire-born genasi">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>FlameforgedSpirit here, a Fire Genasi with a passion for adventure.
+                   My fiery heritage fuels my courage and powers, making me a formidable
+                    ally against any foe that dares to stand in our way.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="MountainTitan" tabindex="-1" aria-labelledby="MountainTitan" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">MountainTitan</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/goliath.jpg" alt="A mountain-born strongman">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>I am MountainTitan, a Goliath with legendary strength and endurance. With the resilience of the mountains and the heart of a warrior, I stand as an unmovable force on our journey.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="WarboundStrategist" tabindex="-1" aria-labelledby="WarboundStrategist" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">WarboundStrategist</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/hobGoblin.jpg" alt="A red goblin humanoid">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>WarboundStrategist reporting for duty, leading with strength and dignity.
+                   As a Hobgoblin, my strategic mind and martial prowess ensure that
+                    every battle is won and every challenge met with precision and strength.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="SylvanReveler" tabindex="-1" aria-labelledby="SylvanReveler" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">SylvanReveler</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/satyr.jpg" alt="A smiling satyr">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>SylvanReveler at your service! A Satyr who revels in life and adventure.
+                   My charisma and musical talents bring merriment and magic to our quests,
+                    ensuring that our spirits are always high.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="TidalVoyager" tabindex="-1" aria-labelledby="TidalVoyager" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5">TidalVoyager</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid" src="images/seaElf.jpg" alt="A smirking sea elf">
+                <h5>Player</h5>
+                <h6>About Me:</h6>
+                <p>Ahoy! I'm TidalVoyager, a Sea Elf who explores deep mysteries with ease.
+                   My aquatic heritage allows me to explore underwater realms and bring
+                    the wisdom of the seas to our land-bound adventures.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="return alert('Cannot remove friend from testuser')">Remove Friend</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+<footer class="sticky-bottom text-center">
+  <div class="container p-4">
+    <section class="footer">
+      <div class="row footerInfo">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="logo">
+          <a href="index.html"><img class="logo" src="images/DMlogo.png" alt="DM's Tavern logo" width="100" height="100"></a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="Help.html">Support Portal</a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="Help.html#contactFormBtn">Email Us</a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="https://github.com/aahmad65">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
